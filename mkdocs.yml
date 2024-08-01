@@ -9,4 +9,3 @@ theme:
   logo: img/logoGovBr.png
   features:
     - navigation.instant
-    - navigation.tabs    
