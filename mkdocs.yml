@@ -2,4 +2,5 @@ site_name: Manual de uso da API de Avaliação e Acompanhamento
 # Configuration
 theme:
   locale: pt_BR
+  logo: img/logoGovBr.png
   name: material
