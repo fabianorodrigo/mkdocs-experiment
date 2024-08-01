@@ -1,7 +1,7 @@
 site_name: Manual de uso da API de Avaliação e Acompanhamento
 # Configuration
 theme:
-  locale: pt_BR
+  language: pt-BR
   name: material
   palette:
     primary: indigo
