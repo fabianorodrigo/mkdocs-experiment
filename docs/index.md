@@ -1,5 +1,3 @@
-# Manual de uso da API de Avaliação e Acompanhamento
-
 # Introdução
 
 O decreto 8936/2016, instituiu a Plataforma de Cidadania Digital e dispôs sobre a oferta dos serviços públicos digitais, no âmbito dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional.
@@ -10,7 +8,11 @@ Entre as informações mínimas que deverão estar disponíveis no painel para c
 
 # Fluxo do Cidadão - Da solicitação à avaliação do serviço
 
+## Solicitação do serviço
+
 Para solicitar um determinado serviço público digital, o cidadão poderá fazê-lo tanto através da página deste serviço no portal Gov.br quanto poderá acessá-lo navegando diretamente no sistema de informação do órgão que presta o serviço. Por exemplo, para utilizar o serviço de Emissão de Comprovante de Situação Cadastral no CPF, prestado pela Receita Federal, o cidadão poderá acessar diretamente o endereço https://servicos.receita.fazenda.gov.br/servicos/cpf/consultasituacao/ConsultaPublica.asp ou acessar <gente, cadê a página do serviço???>
+
+## Registro do acompanhamento do serviço/etapa
 
 Quando o sistema de informação do órgão recebe a solicitação do serviço pelo cidadão, ele deve registrar essa solicitação via API de Acompanhamento de Serviços. Desta forma, tanto o cidadão poderá acompanhar todas as suas solicitações de serviços públicos de forma unificada (em breve no portal Gov.br) quanto o gestor do serviço poderá usufruir de mentoria e ferramentas de gestão elaboradas pela Secretaria de Governo Digital para o acompanhamento e o aperfeiçoamento dos serviços prestados pelo seu órgão.
 
@@ -20,7 +22,11 @@ Chamamos o registro dessa solicitação de ACOMPANHAMENTO. Como veremos mais adi
 
 Muitos serviços públicos são prestados em etapas, eventualmente, passando por diferentes secretarias/coordenações dentro do órgão que darão diferentes contribuições para atender por completo a solicitação do cidadão. Idealmente, o órgão poderá registrar um ACOMPANHAMENTO para cada uma das diferentes etapas da prestação do serviço. Assim, consequentemente, terá acesso a informações mais detalhadas sobre a prestação do serviço, possibilitando melhorias pontuais para melhorar a experiência do cidadão.
 
+## Conclusão do serviço/etapa
+
 Após a conclusão de cada uma das etapas do serviço ou do serviço como um todo, o sistema de informação do órgão fará uma nova interação com a API de Avaliação e Acompanhamento. Desta vez, para informar a conclusão de uma etapa/serviço e, assim, obter um link único para o um formulário de avaliação para o qual o cidadão será direcionado.
+
+## Avaliação do serviço/etapa
 
 Quando o cidadão é direcionado para este link, ele visualizará a tela que pode ser vista na imagem a seguir. Nela, o cidadão poderá avaliar a etapa do serviço que acabou de ser concluída ou, caso seja prestado em uma etapa única, avaliar o serviço como um todo. O cidadão deverá escolher entre 1 e 5 estrelas para manifestar seu nível de satisfação. Em seguida, poderá escolher até 3 critérios que motivaram sua avaliação.
 
@@ -41,7 +47,9 @@ Entendido o propósito, a jornada do cidadão pela prestação de serviços digi
 Faremos isso em etapas que estão listadas a seguir:
 
 [Fluxo de interação](1.fluxo_cidadao.md)
+
 [Credenciais](1.fluxo_cidadao.md)
+
 [xpto](1.fluxo_cidadao.md)
 
 ## Commands
