@@ -8,4 +8,5 @@ theme:
   favicon: img/logoGovBr.png
   logo: img/logoGovBr.png
   features:
-    - navigation.instant  
+    - navigation.instant
+    - navigation.tabs    
